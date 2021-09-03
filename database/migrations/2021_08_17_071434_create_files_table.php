@@ -12,6 +12,8 @@ class CreateFilesTable extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('file_path')->nullable();
+            $table->string('student_id');
+            $table->string('inclusive_year');
             $table->timestamps();
         });
     }

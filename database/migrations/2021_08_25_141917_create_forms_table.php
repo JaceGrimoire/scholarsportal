@@ -13,16 +13,18 @@ class CreateFormsTable extends Migration
      */
     public function up()
     {
-        Schema::create('files', function (Blueprint $table) {
+        Schema::create('forms', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
             $table->string('file_path')->nullable();
+            $table->string('student_id');
+            $table->string('inclusive_year');
             $table->timestamps();
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('files');
+        Schema::dropIfExists('forms');
     }
 }
