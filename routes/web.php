@@ -115,12 +115,9 @@ Route::get('/administrator/proofadmin/{id}', [ProofController::class, 'proof']);
 
 Route::get('/administrator/formsadmin/{id}', [StudentScholarshipController::class, 'studentdetailsadmin']);
 
-
 Route::get('/administrator/calendaradmin', function () {
     return view('administrator.calendaradmin');
 });
-
-
 
 
 // COORDINATOR
@@ -148,17 +145,9 @@ Route::get('/coordinator/formscoordinator/{id}', [StudentScholarshipController::
 
 Route::get('/coordinator/scholarshipprogramcoordinator', [ScholarshipProgramController::class, 'displayscholarshipprogramcoordinator']);
 
-
-
-
 Route::get('/coordinator/calendarcoordinator', function () {
     return view('coordinator.calendarcoordinator');
 });
-
-
-
-
-
 
 require __DIR__.'/auth.php';
 
